@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Scroll with Images and Content</title>
+  
+  <!-- External CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      background-color: #f0f0f0;
+    }
+
+    /* Main Container */
+    .main-container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+    }
+
+    /* Left side (Images scrolling) */
+    .image-section {
+      width: 40%;
+      height: 100vh;
+      overflow-y: auto; /* Changed to auto for scrolling */
+      background-color: #333;
+      padding: 20px;
+      position: relative;
+    }
+
+    .image-section img {
+      width: 100%;
+      margin-bottom: 40px;
+      transition: transform 0.5s ease-in-out;
+      display: block; /* Ensure images are displayed as block */
+    }
+
+    /* Right side (Content changing) */
+    .content-section {
+      width: 60%;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .content-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .content-section p {
+      font-size: 1.2rem;
+    }
+
+    /* Add a little 3D effect */
+    .image-section img.scroll-effect {
+      transform: perspective(1000px) rotateX(10deg);
+    }
+  </style>
+</head>
+<body>
+  <!-- Main container with image and content sections -->
+  <div class="main-container">
+    
+    <!-- Image Section (Left) -->
+    <div class="image-section" id="image-section">
+      <img src="https://picsum.photos/200/300?random=1" alt="Service 1" data-content="Service 1: Details about service 1">
+      <img src="https://picsum.photos/200/300?random=2" alt="Service 2" data-content="Service 2: Details about service 2">
+      <img src="https://picsum.photos/200/300?random=3" alt="Service 3" data-content="Service 3: Details about service 3">
+      <img src="https://picsum.photos/200/300?random=4" alt="Service 4" data-content="Service 4: Details about service 4">
+      <img src="https://picsum.photos/200/300?random=5" alt="Service 5" data-content="Service 5: Details about service 5">
+    </div>
+    
+    <!-- Content Section (Right) -->
+    <div class="content-section" id="content-section">
+      <div>
+        <h2 id="content-title">Welcome</h2>
+        <p id="content-description">Scroll through the services on the left to see the details here.</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- External JavaScript -->
+  <script>
+    // Select the necessary DOM elements
+    const imageSection = document.getElementById('image-section');
+    const contentTitle = document.getElementById('content-title');
+    const contentDescription = document.getElementById('content-description');
+    const images = imageSection.querySelectorAll('img');
+
+    // Scroll event listener
+    imageSection.addEventListener('scroll', function() {
+      images.forEach((img, index) => {
+        const rect = img.getBoundingClientRect();
+
+        // Checking if the image is visible
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          img.classList.add('scroll-effect');  // Add the 3D effect
+          contentTitle.textContent = `Service ${index + 1}`;  // Change title
+          contentDescription.textContent = img.getAttribute('data-content');  // Change content
+        } else {
+          img.classList.remove('scroll-effect');  // Remove 3D effect when not in view
+        }
+      });
+    });
+  </script>
+</body>
+</html>
