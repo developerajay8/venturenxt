@@ -24,8 +24,7 @@ export default function page() {
 
   return (
     <div className="">
-      {/* md:px-[0px] sm:px-[20px] px-[0px] */}
-      <div className="text-[#ffffff] sm:block hidden py-[50px] ">
+      <div className="text-[#ffffff] sm:block hidden py-[50px] xl:px-0 px-[20px]">
         <div className="max-w-[1204px] mx-auto h-[694px] relative ">
           <div
             className="lg:max-w-[694px] max-w-[494px] lg:h-[694px] h-[494px] bg-[#3E3E3E] z-10"
@@ -97,7 +96,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="text-[#ffffff] sm:block hidden py-[50px]">
+      <div className="text-[#ffffff] sm:block hidden py-[50px] xl:px-[0px] px-[20px]">
         <div className="max-w-[1204px] mx-auto h-[694px] relative  flex flex-row-reverse">
           <div
             className="lg:max-w-[694px] max-w-[494px] lg:h-[694px] h-[494px] bg-[#3E3E3E] z-10"
@@ -220,7 +219,7 @@ export default function page() {
         </div>
       </div> */}
 
-      <div className="text-[#ffffff] max-w-[1440px] xl:px-[0px] sm:px-[20px] px-[20px] mx-auto mt-[50px]">
+      <div className="text-[#ffffff] max-w-[1440px] xl:px-[0px]  px-[30px] mx-auto mt-[50px]">
         <div className="max-w-[1204px] mx-auto  py-[30px]">
           <h2 className="sm:text-[36px] text-[30px] text-[#ffffff] font-handel">Glimes Of Services</h2>
         </div>
@@ -362,7 +361,7 @@ export default function page() {
       </div>
 
         {/* footer */}
-      <div className="text-[#ffffff] sm:block hidden max-w-[1204px] lg:px-[0px] px-[20px]  my-[100px] mx-auto  ">
+      <div className="text-[#ffffff] sm:block hidden max-w-[1204px] xl:px-[0px] px-[30px]  my-[100px] mx-auto  ">
         <div className="">
           <p className="text-[14px] font-poppins text-[#ffffff] ">
             Lorem Ipsum is simply dummy text of{" "}
