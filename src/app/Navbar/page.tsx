@@ -1,33 +1,3 @@
-// import React from "react";
-// import Image from "next/image";
-
-// import logo from "../../../public/logo.png";
-
-// export default function page() {
-//   return (
-//     <nav className="py-[30px] max-w-[1341px] mx-auto flex justify-between  items-center">
-//       <div className="">
-//         <Image src={logo} alt="Logo" className="" />
-//       </div>
-//       <div className="">
-//         <ul className="text-[#ffffff] text-[20px] ">
-//             <li>
-//                 <a href="" className="px-[23.50px]">Home</a>
-//                 <a href="" className="px-[23.50px]">About us</a>
-//                 <a href="" className="px-[23.50px]">Service</a>
-//                 <a href="" className="px-[23.50px]">Chat</a>
-//                 <a href="" className="px-[23.50px]">Contact</a>
-//                 <a href="" className="px-[23.50px]">More+</a>
-//             </li>
-//         </ul>
-//       </div>
-//       <div className="text-[#ffffff] ">
-//         <button className="text-[20px] px-[22px]">Log in</button>
-//         <button className="text-[20px] px-[22px] bg-[#002BAA] rounded-[7px] h-[50px]">Sign up</button>
-//       </div>
-//     </nav>
-//   );
-// }
 
 "use client";
 

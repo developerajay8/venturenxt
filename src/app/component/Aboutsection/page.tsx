@@ -5,10 +5,8 @@ import Image from "next/image";
 import Lineimg from "../../../../public/1 line white 1.png";
 import Lineimg2 from "../../../../public/1 line white 1 (1).png";
 import Lineimg3 from "../../../../public/White line logo.png";
-import Iphone from "../../../../public/iPhone 14 Pro – Silver With Shadow 2.png";
-import Recentagle from "../../../../public/Rectangle 199.png";
+
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import Faq from "../Mobile-faq/page";
 
@@ -338,7 +336,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="text-[#ffffff] max-w-[1440px] my-[50px] mx-auto border ">
+      <div className="text-[#ffffff] max-w-[1440px] my-[50px] mx-auto  ">
         <div className="sm:max-w-[817px] max-w-[378px]  mx-auto  flex items-center justify-center lg:px-[0px] px-[20px] ">
           <div className=" text-center sm:mx-[0px] mx-[20px] ">
             <h1 className="sm:font-bold font-handel lg:text-[52px]  sm:text-[42px] text-[26px] sm:leading-[58px] leading-[32px]">
@@ -364,12 +362,12 @@ export default function page() {
       </div>
 
         {/* footer */}
-      <div className="text-[#ffffff] sm:block hidden max-w-[1204px] my-[100px] mx-auto  ">
+      <div className="text-[#ffffff] sm:block hidden max-w-[1204px] lg:px-[0px] px-[20px]  my-[100px] mx-auto  ">
         <div className="">
           <p className="text-[14px] font-poppins text-[#ffffff] ">
             Lorem Ipsum is simply dummy text of{" "}
           </p>
-          <ul className="text-[#ffffff] text-[26px] mt-[20px] font-handel">
+          <ul className="text-[#ffffff] lg:text-[26px] text-[22px] mt-[20px] font-handel">
             <li>
               <a href="" className="pr-[23.50px] ">
                 Home
@@ -392,7 +390,7 @@ export default function page() {
 
         
         <footer className=" py-4 text-white mt-[50px]">
-          <div className="container mx-auto flex justify-between items-center">
+          <div className=" mx-auto flex justify-between items-center gap-4">
             <div className="text-[16px] font-poppins">
               2024© Venturenxt. All rights reserved
             </div>
