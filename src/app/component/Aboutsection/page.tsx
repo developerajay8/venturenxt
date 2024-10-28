@@ -25,29 +25,31 @@ export default function page() {
   }, []);
 
   return (
-    <>
+    <div className="">
+      {/* md:px-[0px] sm:px-[20px] px-[0px] */}
       <div className="text-[#ffffff] sm:block hidden py-[50px] ">
         <div className="max-w-[1204px] mx-auto h-[694px] relative ">
           <div
-            className="max-w-[694px] h-[694px] bg-[#3E3E3E] z-10"
+            className="lg:max-w-[694px] max-w-[494px] lg:h-[694px] h-[494px] bg-[#3E3E3E] z-10"
             data-aos="fade-right"
           ></div>
           <div
-            className="z-20 absolute top-[20%] right-[72px] max-w-[513px] "
+            className="z-20 absolute lg:top-[20%] top-[7%] lg:right-[68px] right-[12px] lg:max-w-[513px] max-w-[433px] "
+   
             data-aos="fade-left"
           >
-            <h2 className="text-[36px] text-[#ffffff] font-handel">About </h2>
-            <h1 className="font-bold text-[52px] font-handel">
+            <h2 className="lg:text-[36px] text-[30px] text-[#ffffff] font-handel">About </h2>
+            <h1 className="font-bold lg:text-[52px] text-[46px] font-handel">
               VENTURE <span className="text-[#1654C1]">NXT</span>{" "}
             </h1>
-            <div className="text-[18px] font-medium text-[#ffffff]">
-              <p className="font-poppins ">
+            <div className="lg:text-[18px] text-[17px] font-medium text-[#ffffff]">
+              <p className="font-poppins  ">
                 Lorem Ipsum is simply dummy text of the printing and setting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500
               </p>
 
-              <p className="pt-[30px] font-poppins">
+              <p className="lg:pt-[30px] pt-[20px] font-poppins">
                 when an unknown printer took a galley of type and scrambled it
                 to make a type specimen book.
               </p>
@@ -100,7 +102,7 @@ export default function page() {
       <div className="text-[#ffffff] sm:block hidden py-[50px]">
         <div className="max-w-[1204px] mx-auto h-[694px] relative  flex flex-row-reverse">
           <div
-            className="max-w-[694px] h-[694px] bg-[#3E3E3E] z-10"
+            className="lg:max-w-[694px] max-w-[494px] lg:h-[694px] h-[494px] bg-[#3E3E3E] z-10"
             data-aos="fade-left"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
@@ -112,11 +114,11 @@ export default function page() {
             animi doloremque at asperiores qui aliquid.
           </div>
           <div
-            className="z-20 absolute top-[20%] left-[0px] max-w-[765px]"
+            className="z-20 absolute lg:top-[20%] top-[10%] left-[0px] lg:my-[0px] my-auto lg:max-w-[765px] max-w-[450px]"
             data-aos="fade-right"
           >
-            <h2 className="text-[36px] text-[#ffffff] font-handel">Growth Consulting</h2>
-            <h1 className="font-bold text-[52px] font-handel">
+            <h2 className="lg:text-[36px] text-[30px] text-[#ffffff] font-handel">Growth Consulting</h2>
+            <h1 className="font-bold lg:text-[52px] text-[46px] lg:leading-[60px] leading-[52px] font-handel">
               Why A Brand Need <span className="text-[#1654C1]">Branding</span>{" "}
               And <span className="text-[#1654C1]">Growth Consulting</span>{" "}
             </h1>
@@ -162,13 +164,13 @@ export default function page() {
       <div className="text-[#ffffff] sm:block hidden  ">
         <div className="max-w-[1204px] h-[800px] mx-auto  flex items-center justify-center">
           <div className=" text-center ">
-            <h1 className="font-bold text-[52px] font-handel uppercase " data-aos="fade-down">
+            <h1 className="font-bold lg:text-[52px] text-[48px] font-handel uppercase " data-aos="fade-down">
               Services offered by
             </h1>
             <Image
               src={Lineimg}
               alt="Logo"
-              className=" mx-auto pt-[30px]"
+              className=" mx-auto pt-[30px] lg:w-[full] w-[330px] "
               data-aos="fade-up"
             />
           </div>
@@ -220,7 +222,7 @@ export default function page() {
         </div>
       </div> */}
 
-      <div className="text-[#ffffff] max-w-[1440px] sm:px-[0px] px-[20px] mx-auto mt-[50px]">
+      <div className="text-[#ffffff] max-w-[1440px] xl:px-[0px] sm:px-[20px] px-[20px] mx-auto mt-[50px]">
         <div className="max-w-[1204px] mx-auto  py-[30px]">
           <h2 className="sm:text-[36px] text-[30px] text-[#ffffff] font-handel">Glimes Of Services</h2>
         </div>
@@ -336,10 +338,10 @@ export default function page() {
         </div>
       </div>
 
-      <div className="text-[#ffffff] max-w-[1440px] my-[50px] mx-auto  ">
-        <div className="sm:max-w-[817px] max-w-[378px]  mx-auto  flex items-center justify-center ">
-          <div className=" text-center sm:mx-[0px] mx-[20px]">
-            <h1 className="sm:font-bold font-handel sm:text-[52px] text-[26px] sm:leading-[58px] leading-[32px]">
+      <div className="text-[#ffffff] max-w-[1440px] my-[50px] mx-auto border ">
+        <div className="sm:max-w-[817px] max-w-[378px]  mx-auto  flex items-center justify-center lg:px-[0px] px-[20px] ">
+          <div className=" text-center sm:mx-[0px] mx-[20px] ">
+            <h1 className="sm:font-bold font-handel lg:text-[52px]  sm:text-[42px] text-[26px] sm:leading-[58px] leading-[32px]">
               It's Time Make Your Decision Business Growth
             </h1>
             <p className="sm:text-[18px] text-[14px] sm:leading-[30px] font-poppins leading-[20px] font-medium pt-[14px] sm:px-[0px] px-[40px]">
@@ -483,6 +485,6 @@ export default function page() {
           </div>
         </footer>
       </div>
-    </>
+    </div>
   );
 }

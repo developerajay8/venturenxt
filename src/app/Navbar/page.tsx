@@ -47,11 +47,11 @@ export default function Navbar() {
       {/* Logo Section */}
       <div className="flex items-center">
       <Image src={logo} alt="Logo" width={120} height={50} className="cursor-pointer md:block hidden" />
-      <Image src={logo2} alt="Logo" width={120} height={50} className="cursor-pointer md:hidden block" />
+      <Image src={logo2} alt="Logo" width={174} height={31} className="cursor-pointer md:hidden block" />
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex space-x-8 text-lg text-white font-handel ">
+      <ul className="hidden lg:flex space-x-8 text-lg text-white font-handel ">
         <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
         <li><Link href="/about" className="hover:text-gray-300">About Us</Link></li>
         <li><Link href="/services" className="hover:text-gray-300">Services</Link></li>
@@ -61,7 +61,7 @@ export default function Navbar() {
       </ul>
 
       {/* Desktop Buttons */}
-      <div className="hidden md:flex space-x-4 font-handel">
+      <div className="hidden lg:flex space-x-4 font-handel">
         <button className="text-white text-lg px-4 font-handel">Log in</button>
         <button className="bg-blue-600 text-white font-handel px-6 py-2 rounded-lg text-lg hover:bg-blue-700">
           Sign up
@@ -69,7 +69,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Hamburger and Cross Menu Button */}
-      <div className="md:hidden z-50">
+      <div className="lg:hidden z-50">
         <button onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? (
             <FaTimes className="text-3xl text-black" onClick={() => setMenuOpen(false)}/> // Cross (close) icon
